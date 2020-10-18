@@ -1,6 +1,5 @@
 import tensorflow as tf
-#import tensorflow.contrib.layers as tcl
-from tensorflow.python.compiler.tensorrt import tcl_convert as tcl
+import tensorflow.contrib.layers as tcl
 from tensorflow.contrib.framework import arg_scope
 
 import numpy as np
