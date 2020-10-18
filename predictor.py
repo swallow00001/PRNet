@@ -1,6 +1,8 @@
 import tensorflow as tf
-import tensorflow.contrib.layers as tcl
+#import tensorflow.contrib.layers as tcl
+from tensorflow.python.compiler.tensorrt import tcl_convert as tcl
 from tensorflow.contrib.framework import arg_scope
+
 import numpy as np
 
 def resBlock(x, num_outputs, kernel_size = 4, stride=1, activation_fn=tf.nn.relu, normalizer_fn=tcl.batch_norm, scope=None):
